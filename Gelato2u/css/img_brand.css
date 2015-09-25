@@ -1,0 +1,6 @@
+.navbar-brand > img {
+  display: block;
+  object-fit: contain;
+  max-height: 100%;
+  height: 100%;
+}
