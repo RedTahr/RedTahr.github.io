@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Protecting your child online</title>
+</head>
+<body>
+	<H2>Protecting your child online</H2>
+<p>In my pursuit to work out how to do what one can to filter the internet for your children I've considered different solutions.
+But most of them were "install on device X" type solutions, which somewhat confines the child to using only that device, and how 
+likely is that; plus how quickly will the youngster work out how to hack their device and remove said filtering?</p>
+<p>Obviously talking to your kid about the Internet/World is your first starting point and ultimate tool in your armory to protect them from others and the web. 
+Yet its still nice to be able to do a little bit to filter the deluge of the web from flooding your childs mind, I am reminded of the apt quote of
+"there are some things you can't unsee".</p>
+<p>Don't get me wrong, some of those solutions are good and quite effective. I was impressed with
+ <a href="http://windows.microsoft.com/en-NZ/windows-8/family-safety" title="Keep your kids safer on the PC">Microsofts Family Safety</a> solution; 
+ under Windows 7; which if I recall correctly even blocked some search engine image results. But it would appear that from Windows 8 (and still
+ present in the beta of Windows 10) 
+ you need to change the users account to that of child rather than being able to apply the feature to any type of
+ user account on the device. I admit I haven't played round to see if a child account is usable by a teenager (i.e. can they install games).</p>
+ <p>But I digress, basically the only non-install software solution I've found is to join an Internet provider who provides that service, or set
+ your modem/router to use a DNS server that provides that service. The later being the path I took.</p>
+ <p>Which is where <a href="https://www.opendns.com/">OpenDNS</a> comes into it with their 
+ <a href="https://www.opendns.com/home-internet-security/parental-controls/opendns-familyshield/">Family Shield</a> option. I used their 'configure your own'
+ service for a while, but as that requires them to know your IP address to apply your chosen filtering options I eventually switched to their pre-configured
+ option.</p><p>Them knowing your IP address isn't an issue if you have a fixed IP address, or you can install their IP updater app that'll update your account with
+ your IP address; of course this requires the device the app is installed on to be turned on at some point to ensure your options are applied to your connection.</p>
+ <p>You can
+ setup an OpenDNS Home account and control what gets filtered and have info about stuff, or you can just set the primary/secondary DNS IP addresses
+ on your router to their Family Shield ones and job done (they have two different sets of IP addresses, one for the pre-configured service and one for the
+ service you control). You don't need to signup for their pre-configured service, just hit the 
+ "<a href="https://store.opendns.com/setup/#/familyshield" title="SET UP FAMILYSHIELD ON YOUR DEVICE">continue without signing up</a>" option.</p>
+ <p>At this point you may be thinking it all sounds fine and dandy, but how does one actually set that modem thingy to use whatever the heck a DNS server is?</p>
+ <p>Well, your modem came with a manual right? or find it online. The common start point is to log into your modem/router, so from a web browser you'll need to type
+ in the routers IP address; this is commonly 192.168.0.1 or 192.168.1.1 or 10.0.0.1 and more recently fibre routers tend to be configured with 192.168.20.1 for example.</p>
+ <p>Then find two fields near a DNS heading called Primary and Secondary and enter the two DNS entries that OpenDNS has for the service you chose. (Primary
+ and Secondary is just incase the first/primary server is busy it'll pass you on to the secondary server)</p>
+ <p>I don't have those options you say, or they're not user editable. Well I've noticed that a few Internet providers (like Telecom/Spark, seriously
+ who chose that as a rebranding) don't let you set your DNS entries for some reason. So one solution is to Telnet into the modem; which isn't scary;
+ you'll probably need to install/enable Telnet on your machine (depending on the system/OS), then search the internet for the commands for your modem
+ and the login info, then set the DNS entries that way. Like this aptly titled post on the Blitz Research site, <a href="http://www.blitzbasic.co.nz/Community/posts.php?topic=84954">How to add DNS servers on a router with Telnet</a>.</p>
+ <hr>
+ <p>You may be thinking I've read this post before, well I did have it on another blog site, but I found their adverts quite trying and generally totally uninteresting/insignificant (mass media drivel), so I deleted my posts and closed my account there.</p>
+
+</body>
+</html>
