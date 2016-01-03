@@ -31,7 +31,7 @@ https://<ip>:10000 from remote-host
 http://<ip>:32400/web/index.html
 
 ## mounting filesystems
-## partitioning and formating external drive
+### partitioning and formating external drive
 sudo parted
 print all
 select /dev/sda (or the label of the drive you're interested in)
@@ -100,9 +100,9 @@ change last line to your preferred name
 ### setup samba from the command line
 sudo nano /etc/samba/smb.conf
 cp smb.conf smb.conf.master (to create a backup first if you like)
-- you can see the changes webmin made, such as wins support being on (and probably
+you can see the changes webmin made, such as wins support being on (and probably
 repeated later in a commented block too from the original file), see end of file for
-created shares.
+created shares
 testparm (to verify smb.conf file)
 sudo service samba restart (if you've made changes)
 
@@ -113,7 +113,7 @@ sudo apt-get install plexmediaserver
 
 http://<ip>:32400/web/index.html
 
-### side note, was mentioned in the other dlna solution
+#### side note, was mentioned in the other dlna solution
 to change the owner of a folder to a group so plex/dlna can write to an ext4 partition.
 sudo chown 'plexdlna:plexdlna' /mnt/data/plexdlna (chown == change owner)
 navigate to /mnt/data/public
@@ -139,7 +139,7 @@ sudo service plexmediaservice start
 
 
 
-# CrashPlan
+## CrashPlan
 sudo apt-get install libjna-java
 download from crashplan website
 (for ease of use give everybody full access to /mnt/data/public)
@@ -168,25 +168,25 @@ sudo service crashplan status
 cat /usr/local/crashplan/log/engine_error.log (should return nothing)
 cd /usr/local/crashplan
 sudo update-rc.d crashplan defaults (to set it to restart on reboot)
-## patch crashplans UI
+### patch crashplans UI
 sudo apt-get install libswt-gtk-3-java libswt-cairo-gtk-3-jni
 sudo cp /usr/lib/java/swt-gtk-3.8.0.jar /usr/local/crashplan/lib/swt.jar
 
 
 
-# OpenVPN
+## OpenVPN
 ...
 
 
 
 
 
-# BitTorrentSync (your own private cloud)
+## BitTorrentSync (your own private cloud)
 ...
 
 
 
-# Booting from External Drive
+## Booting from External Drive
 first force file system check on next reboot
 sudo touch /forcefsck
 reboot
@@ -222,7 +222,7 @@ replace /dev/mmcblk0p2 with /dev/desk/by-uuid/"uuid"
 exit/save/reboot
 cat /etc/fstab
 (if everythings changed then the pi's activity LED won't blink much, but the HDDs LED will)
-## expand the swap file
+### expand the swap file
 swapon -s (status of swapfile)
 sudo nano /etc/dphys/swap-file
 change the one line to have, say 2048 for a 2gig swap file
@@ -231,12 +231,12 @@ reboot
 
 
 
-# UPS (redundancy)
+## UPS (redundancy)
 find a NUT (www.networkupstools.org) compatible UPS
 ...
 
 
-# WordPress (server)
+## WordPress (server)
 ...
 
 
@@ -244,8 +244,8 @@ find a NUT (www.networkupstools.org) compatible UPS
 
 
 
-# supplmentary
-## notes
+## supplmentary
+### notes
 - root folder of raspbian contains config.txt which defines the pi's boot settings and is user editable.
 - 'nano' text editor
 - edit /var/run/wpa_supplicant for wifi settings if not using xwin
@@ -253,23 +253,23 @@ find a NUT (www.networkupstools.org) compatible UPS
 - sudo shutdown -h now
 - groups (to see the groups your login belongs too, i.e. sudo, etc)
 
-## permissions
+### permissions
 http://permissions-calculator.org
 four digits, i.e. 0755
 special - user - group - other
 special means different things depending on file. setuid = 4, setgid = 2, sticky = 1.
 user/group/other : read = 4, write = 2, execute = 1.
 
-## NTFS support
+### NTFS support
 sudo apt-get install ntfs-config gdisk (ntfsprogs merged into ntfs-3g, which is preinstalled)
 
-## pi current output
+### pi current output
 sudo nano /boot/config.txt
 scroll to end
 add 'max_usb_current=1'
 increases usb current from 600mA to 1.2mA.
 
-## top / htop
+### top / htop
 (processes, resources monitoring)
 sudo apt-get install htop (not installed by default)
 system processes
