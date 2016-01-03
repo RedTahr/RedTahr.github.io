@@ -1,13 +1,14 @@
 my notes from the pluralsight course on using a raspberry pi as a home server.
 
-# remote into pi
+#### remoting into pi
+(if you don't have a human I/O kit for it)
 ssh <ip> -l pi
 pw: ...
 
 passwd to change the default password
 
 sudo apt-get install tightvncserver
-## tightVNC
+##### tightVNC
 sudo vncserver :1
 pw: (limitied to eight characters)
 
