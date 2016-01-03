@@ -3,4 +3,4 @@ Disallow: /image/
 Disallow: /css/
 Disallow: /js/
 Disallow: /fonts/
-Disallow: /Gelato2u/
+Disallow: /notes/
