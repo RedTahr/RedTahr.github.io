@@ -2,7 +2,7 @@ my notes from the pluralsight course on using a raspberry pi as a home server.
 
 #### remoting into pi
 (if you don't have a human I/O kit for it)
-ssh <ip> -l pi
+ssh **ip** -l pi
 pw: ...
 
 passwd to change the default password
@@ -14,7 +14,7 @@ pw: (limitied to eight characters)
 
 on windows/remote-host:
 tightvnc client (or vnc viewer) ip:screen-number
-<ip>:1
+**ip**:1
 
 # home server
 
@@ -26,10 +26,10 @@ exit (to stop being root)
 sudo apt-get install webmin
 
 ## webmin 
-https://<ip>:10000 from remote-host
+https://**ip**:10000 from remote-host
 
 ## PLEX
-http://<ip>:32400/web/index.html
+http:/**ip**:32400/web/index.html
 
 ## mounting filesystems
 ### partitioning and formating external drive
@@ -112,7 +112,7 @@ http://www.htpcguides.com/install-plex-media-server-on-raspberry-pi-2/
 for current instructions on installing plexmediaserver (adding sources, etc)
 sudo apt-get install plexmediaserver
 
-http://<ip>:32400/web/index.html
+http://**ip**:32400/web/index.html
 
 #### side note, was mentioned in the other dlna solution
 to change the owner of a folder to a group so plex/dlna can write to an ext4 partition.
