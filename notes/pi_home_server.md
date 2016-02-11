@@ -133,7 +133,13 @@ sudo ln -s /mnt/data/plexmediaserver/ /var/lib/plexmediaserver/
 ls /var/lib (to check the symbolic link was created)
 sudo service plexmediaservice start
 
-
+#### fix server not powerful enough issue
+http://www.htpcguides.com/fix-plex-server-is-not-powerful-enough-on-raspberry-pi-2/
+script to run:
+plexjstofix=$(sudo find /usr/lib/plexmediaserver -name main*.js)
+sudo cp $plexjstofix $plexjstofix".bak"
+sudo sed -i s'/validateTranscoder:function([a-zA-Z],[a-zA-Z]){/&return false;/' $plexjstofix
+sudo service plexmediaserver restart
 
 
 
