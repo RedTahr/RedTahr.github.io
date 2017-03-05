@@ -1,0 +1,160 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+  
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+  <title>BYOD at School and InfoSec, maybe</title>
+
+  
+  
+  <style>
+h2, h3, h4, p {
+    font-family: Arial, Helvetica, sans-serif
+}
+  </style>
+</head><body>
+<h2>BYOD at school and IT safety</h2>
+
+<p>I'm just a naïve programmer trying to help a
+non-programmer friend who's youngsters school has gone all BYOD on them.<br>
+(or maybe I'll just make them more
+paranoid)<br>
+</p>
+
+<p>First off, the schools BYOD guidance
+is lacking, so I'll point them at <a href="http://www.camhigh.school.nz/files/Living%20Documents/FAQ%20parents%20BYOD%20at%20CHS.pdf" target="_blank">Cambridge High Schools one</a> I found as a more
+useful example; maybe they can comment on it at the next parent-teacher
+night; I'm
+not based in Cambridge, that link just happened to show up on the first
+page of searches. My main issue with their schools guidance is the
+storage capacity requirement which, to quote the doc "Must have enough
+storage to download and install software", bit vague there don't you
+think? It has no mention of what software or how much space enough
+might be. If the school can't give a number here I'm worried about
+their abiltiy to provide a safe IT environment for their students.</p>
+
+<p>Anyway, I'm stop the ranting and get
+back to trying to be helpful. Mainly this is a summary of texting Q/A,
+and thoughts I may have missed, and possible notes from previous
+"keeping your kid safe online" themed post I'd done previously.
+</p>
+
+<h3>"Vector of disease"</h3>
+
+<p>(To borrow a phrase I heard my
+brother-in-law use to refer to kids once)<br>
+</p>
+
+<p>Why I might just be making my friend
+paranoid is that I started my text thread with him the other night with
+something along the lines of, "...you'll want to prep for the
+inevitable fellow pupil bringing malware or ransomware to school.
+Higher risk of this if the wifi is school wide and not a classroom
+limited affair". Queue the 'how on earth do I protect against that'
+style
+response.</p>
+
+<p>There's the simple things of don't
+have the kids account running as admin, have them on their own wifi at
+home to limit how easily network mobile infections could spread. If you
+can get a decent enough laptop, have it running linux with Wine for
+anything that must be Windows based, though I've never tried this and
+I'm not sure Office would play nice with Wine, but given that schools
+no doubt have Office 365 in the cloud they might get away with never
+having the need to actually install Office and get by just using it in
+the browser...which again could be an issue as I doubt Edge or Internet
+Explorer exist in Linux :-) as I've experienced multiple issues where
+certain features don't exist or work if you're not in an MS browser.</p>
+
+<p>Backup, with a system that won't be
+comprimised if their system is. As I implied at the start I'm no guru,
+so any opinions are just that. So my backup advice was along the lines
+of having an independent system (you know, pick up a raspberry pi or
+cheap laptop that'll run linux) and have that being the thing that
+takes backups, so infections will hopefully be slowed by the need to
+infect a different OS and a different account if the infection wants to
+trash your kids backup as well.</p>
+
+<h4>Hardware specs.</h4>
+
+<p>The high school above is
+understandably higher speced than a primary school, but I'd say common
+ground is the "windows 10" compatibility thing, beit a chromebook,
+laptop or Mac that can run MS Office on, as Office or Google Docs are
+probably the two main areas of apps your run of the mill student will
+need. So for office, according to that link above, 3GB is needed, and
+with windows wanting 10GB on a good day any laptop is likely to have
+enough space. As most laptops will have that then its not really a spec
+of concern. </p>
+
+<p>As for CPU, most systems a cash strapped parent (have you seen what
+it
+costs to send a kid to school...) will be looking at things with
+Celeron class chips in them, which is fine as long as the child isn't
+in the Audio/Visual (A/V) class at schooll, which given that the kids
+mobile phone can probably record gigs of High Definition (HD) video
+will make life a grind if they try editing that on a Celeron, but for
+everything else it'll no doubt suffice. </p>
+
+<p>RAM is commonly 4GB, which is sufficient, but again A/V you'll want
+more.</p>
+
+<p>One other thing to think about is connections, the more the merrier,
+so
+they have good odds of being able to interface with any tech that their
+schools Electronics or A/V class might have knocking about.</p>
+
+<p>My friend was looking at decent celeron based systems with
+ample/huge
+storage space, I didn't spend much time glancing at the possilbilities
+using <a href="https://pricespy.co.nz/category.php?k=353">pricespy</a>,
+I think the only system I commented on was a Lenovo with 32GB storage,
+and over nine hours battery life, which I thought was decent, as given
+the fact the laptop has to last the day and will hopefully get your
+child through a few years of school, then you want this number to be
+high so as the battery degrades over time then it'll still have the
+ability to hold a few hours worth of charge after its been in use for a
+few years.<br>
+</p>
+
+<h4>Random comments<br>
+</h4>
+
+<p>The only other thing at home that crosses my mind and something I
+wrote a previous post on, is the whole net filtering thing at home. I
+normally just suggest use <a href="https://www.opendns.com/setupguide/?url=familyshield">FamilyShield
+by OpenDNS</a>, a free service that filters most stuff and only
+requires your home router to point at their IP address (I wrote how to
+do that kinda, but the above link is their setup guide). You can setup
+a free account and fully manage the filtering and get logs and stuff
+too I recall. Its better than installing some software as then its only
+that machine thats filtered.<br>
+Actually there was a good twitter thread the other day, a gent teaching
+his kids gf to use VPN I think it was, sounds like he ended up
+schooling a class worth of kids on VPN use, though as he noted it'd
+potentially earn him the ire of parents of said kids if the parents
+were trying to "monitor things to keep the children safe". Which is
+counterproductive in various ways, mostly the user is the person in the
+best position to keep themselves safe, so user education, trust and
+responsibility would work better than monitoring the data. Plus how
+well is said data going to be reviewed, and who has that time? Makes me
+think its a false sense of protection, and introduces an aspect of
+distruct into the often already challenging parent/child relationship.<br>
+</p>
+
+<p>A possibly handy reference document
+is this (albeit two year old, maybe there's a newer version somewhere) <a href="http://www.education.govt.nz/assets/Documents/School/Managing-and-supporting-students/DigitalTechnologySafeAndResponsibleUseInSchs.pdf" target="_blank">Digital Technology: Safe and Responsible use in schools</a>,
+I'm including this <a href="http://www.education.govt.nz">education.govt</a>
+link purely as another doc to reference
+should your schools InfoSec policy fall short, or not exist. It
+mentions malware once at least...</p>
+<p><br>
+</p>
+
+<hr>
+
+<p>All typos and grammatical errors are because this is a first draft
+and written in something with notepad grade spell checking ability :-)<br>
+</p>
+<p>© @redtahr 2017</p>
+
+</body></html>
