@@ -3,8 +3,6 @@
   
   <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
   <title>BYOD at School and InfoSec, maybe</title>
-
-  
   
   <style>
 h2, h3, h4, p {
@@ -114,12 +112,10 @@ the fact the laptop has to last the day and will hopefully get your
 child through a few years of school, then you want this number to be
 high so as the battery degrades over time then it'll still have the
 ability to hold a few hours worth of charge after its been in use for a
-few years.<br>
+few years.
 </p>
 
-<h4>Random comments<br>
-</h4>
-
+<h4>Filtering the web</h4>
 <p>The only other thing at home that crosses my mind and something I
 wrote a previous post on, is the whole net filtering thing at home. I
 normally just suggest use <a href="https://www.opendns.com/setupguide/?url=familyshield">FamilyShield
@@ -139,8 +135,10 @@ best position to keep themselves safe, so user education, trust and
 responsibility would work better than monitoring the data. Plus how
 well is said data going to be reviewed, and who has that time? Makes me
 think its a false sense of protection, and introduces an aspect of
-distruct into the often already challenging parent/child relationship.<br>
-</p>
+distruct into the often already challenging parent/child relationship.</p>
+  
+<h4>Random comments</h4>
+  
 <p>A possibly handy reference document
 is this (albeit two year old, maybe there's a newer version somewhere) <a href="http://www.education.govt.nz/assets/Documents/School/Managing-and-supporting-students/DigitalTechnologySafeAndResponsibleUseInSchs.pdf" target="_blank">Digital Technology: Safe and Responsible use in schools</a>,
 I'm including this <a href="http://www.education.govt.nz">education.govt</a>
@@ -148,20 +146,28 @@ link purely as another doc to reference
 should your schools InfoSec policy fall short, or not exist. It
 mentions malware once at least...</p>
 
-  <h5>Virtual Private Network (VPN)</h5>
-  <p>Figured I should include a bit on VPN after I go and mention a random twitter thread and don't actually say what VPN is. 
-  Before I forget, "why VPN?" you ask, in short means when your kids login to a service or send email a third party who's on the same
-  network (classroom/school-wide wifi remember) won't be able to see their password or email like reading a postcard in your letterbox.
-  How easy is that you ask? Well, this is the internet, anything and everything is available, I recall installing an Android app once
-  just to see how easy it made session hijacking (thats where you see who's on an account of interest and you high jack their login, so you're now them).</p>
-  <p>There are various ways of doing this, paid or free services, setting up your own. I'd opt for setting up your own on your home router if possible
-  or on a spare computer (old desktop/laptop, raspberry pi, unloved IoT device whose firmware is totally insecure so no good for the use it was purchased for...)</p>
-  <ul>
-    <li>A useful intro/overview of VPN and uses of it over at makeuseof, <a href="http://www.makeuseof.com/tag/8-instances-you-werent-using-a-vpn-but-shouldve-been/">The VPN Checklist</a></li>
-  <li>Setting up a home VPN on your router, <a href="http://www.ibvpn.com/billing/knowledgebase/36/DD-WRT-routers-OpenVPN-setup.html">OpenVPN setup on DD-WRT routers</a></li>
-    <li>If you don't want to do any work and have a Raspberry Pi this might work for you, <a href="http://www.pivpn.io/">PiVPN: Simplest OpenVPN setup and configuration, designed for Raspberry Pi.</a></li>
-  </ul>
-  <p>Think I've probably gone too far now with the anxiety inducing aspect of things...oh well, will wait for feedback from my friends.</p>
+  <p>I haven't mentioned antivirus have I. Well its kindof presumed that you'll be running some, ideally the school or national education
+  system will have local copies of all the pertinent antivirus definitions so that things all update quickly and easily. But antivirus
+  is just a preventative measure rather than bulletproof protection, viruses are hard to detect, just look at the human body, it 
+  gets confused about whats dangerous (peanuts anyone) and what isn't, and computers are built by humans, so what chance do they have. 
+  Also antivirus can generally spot the viruses it knows about (from the definitions it updates so regularly), but there are false positives
+  and the area of spotting things it doesn't know about, or behaviour thats dodgy is hard, made moreso by legitimate software 
+  doing dodgy stuff itself (Windows 10 anyone).</p>
+  
+<h5>Virtual Private Network (VPN)</h5>
+<p>Figured I should include a bit on VPN after I go and mention a random twitter thread and don't actually say what VPN is. 
+Before I forget, "why VPN?" you ask, in short means when your kids login to a service or send email a third party who's on the same
+network (classroom/school-wide wifi remember) won't be able to see their password or email like reading a postcard in your letterbox.
+How easy is that you ask? Well, this is the internet, anything and everything is available, I recall installing an Android app once
+just to see how easy it made session hijacking (thats where you see who's on an account of interest and you high jack their login, so you're now them).</p>
+<p>There are various ways of doing this, paid or free services, setting up your own. I'd opt for setting up your own on your home router if possible
+or on a spare computer (old desktop/laptop, raspberry pi, unloved IoT device whose firmware is totally insecure so no good for the use it was purchased for...)</p>
+<ul>
+  <li>A useful intro/overview of VPN and uses of it over at makeuseof, <a href="http://www.makeuseof.com/tag/8-instances-you-werent-using-a-vpn-but-shouldve-been/">The VPN Checklist</a></li>
+<li>Setting up a home VPN on your router, <a href="http://www.ibvpn.com/billing/knowledgebase/36/DD-WRT-routers-OpenVPN-setup.html">OpenVPN setup on DD-WRT routers</a></li>
+  <li>If you don't want to do any work and have a Raspberry Pi this might work for you, <a href="http://www.pivpn.io/">PiVPN: Simplest OpenVPN setup and configuration, designed for Raspberry Pi.</a></li>
+</ul>
+<p>Think I've probably gone too far now with the anxiety inducing aspect of things...oh well, will wait for feedback from my friends.</p>
 <br>
 
 <hr>
