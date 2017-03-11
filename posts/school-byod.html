@@ -3,6 +3,8 @@
   
   <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
   <title>BYOD at School and a bit of InfoSec</title>
+
+  
   
   <style>
 h1, h2, h3, h4, h5, h6, p, li {
@@ -15,7 +17,10 @@ h1, h2, h3, h4, h5, h6, p, li {
 <p>I'm just a naïve programmer trying to help a
 non-programmer friend whose youngsters school has gone all BYOD on them.<br>
 (or maybe I'll just make them more
-paranoid)<br>This has developed over time and now includes more general infosec (information/IT security) opinions for children/people beyond the original BYOD School question.
+paranoid)<br>
+This has developed over time and now includes more general infosec
+(information/IT security) opinions for children/people beyond the
+original BYOD School question.
 </p>
 
 <p>First off, the schools BYOD guidance
@@ -51,52 +56,65 @@ limited affair". Queue the 'how on earth do I protect against that'
 style response.</p>
 
 <p>There's the simple things of don't
-have the kids account running as admin, 
-  enable/force <a href="https://www.eff.org/https-everywhere">HTTPS everywhere</a>, have them on their own wifi at
+have the kids account running as admin, enable/force <a href="https://www.eff.org/https-everywhere">HTTPS everywhere</a> if
+thats an option, have them on their own wifi at
 home to limit how easily network mobile infections could spread. If you
 can get a decent enough laptop, have it running linux with Wine for
 anything that must be Windows based, though I've never tried this and
 I'm not sure Office would play nice with Wine, but given that schools
-no doubt have Office 365 in the cloud they might get away with never
-having the need to actually install Office and get by just using it in
-the browser...which again could be an issue as I doubt Edge or Internet
+no doubt have Office 365 in the cloud&nbsp; or Google Apps they might
+get away with never
+having the need to actually install Office and get by just using a
+browser...which again could be an issue as I doubt Edge or Internet
 Explorer exist in Linux :-) and I've experienced multiple issues where
-certain features of MS online apps don't exist or work if you're not in an MS browser; so maybe thats not such a great idea...</p>
+certain features of MS online apps don't exist or work if you're not in
+an MS browser, same goes for Google Apps outside of Chrome too; so
+maybe thats not such a great idea...</p>
 
 <p>Backup, with a system that won't be
-comprimised if their system is. As I implied at the start I'm no guru,
+comprimised if their system is, i.e. a backup that ransomware wouldn't
+get to include in its ransom. As I implied at the start I'm no guru,
 so any opinions are just that. So my backup advice was along the lines
 of having an independent system (you know, pick up a raspberry pi or
 cheap laptop that'll run linux) and have that being the thing that
 takes backups, so infections will hopefully be slowed by the need to
 infect a different OS and a different account if the infection wants to
-trash your kids backup as well. Yeah this is probably beyond most parents, we'll try to get some non-tech suggestions in here too.</p>
+trash your kids backup as well. Yeah this is probably beyond most
+parents, we'll try to get some non-tech suggestions in here too.</p>
 
 <h4>Hardware specs.</h4>
 
 <p>The high school above is
-understandably higher speced than a primary school, but I'd say common
+understandably higher specced than a primary school, but I'd say common
 ground is the "windows 10" compatibility thing, beit a chromebook,
 laptop or Mac that can run MS Office on, as Office or Google Docs are
 probably the two main areas of apps your run of the mill student will
 need. So for office, according to that link above, 3GB is needed, and
-with windows wanting 10GB on a good day any laptop is likely to have
+with <a href="https://www.microsoft.com/en-nz/windows/windows-10-specifications">Windows
+10 wanting 16GB-20GB</a> any laptop is likely to have
 enough space. As most laptops will have that then its not really a spec
 of concern. </p>
 
 <p>As for CPU, most systems a cash strapped parent (have you seen what
 it
 costs to send a kid to school...) will be looking at will have
-Celeron or Atom class chips in them, which is fine as long as the child isn't
+Celeron or Atom class chips in them, which is fine as long as the child
+isn't
 in the Audio/Visual (A/V) class at school, which given that the kids
 mobile phone can probably record gigs of High Definition (HD) video
 will make life a grind if they try editing on their laptop, but for
-everything else it'll no doubt suffice; and they can probably edit the video on their phone anyway. </p>
+everything else it'll no doubt suffice; and they can probably edit the
+video on their phone anyway. </p>
 
-<p>RAM is commonly 4GB, which is sufficient, but again A/V you'll want
-more. Lenovo have some very nice "netbook-ish" laptops, a few of which max out with 2GB of RAM, but they still do the job I've heard.</p>
+<p>For the School BYOD range of laptops/netbooks that I've briefly
+browsed over RAM is commonly 2-4GB, which is sufficient, but again A/V
+you'll want
+more. Lenovo have some very nice "netbook-ish" laptops, a few of which
+max out with 2GB of RAM, but they still do the job I've heard.</p>
 
-<p>One other thing to think about is connections (USB/HDMI/display-port/VGA/COM/LPT I'm kidding about the last two, kindof), the more the merrier,
+<p>One other thing to think about is connections
+(USB/HDMI/display-port/VGA/PCMCIA/COM/LPT I'm kidding about the last
+two or three, or four, kindof), the more the merrier,
 so
 they have good odds of being able to interface with any tech that their
 schools Electronics or A/V class might have knocking about.</p>
@@ -107,14 +125,17 @@ storage space, I didn't spend much time glancing at the possilbilities
 using <a href="https://pricespy.co.nz/category.php?k=353">pricespy</a>,
 I think the only system I commented on was a Lenovo with 32GB storage,
 and over nine hours battery life, which I thought was decent, as given
-the fact the laptop has to last the day and will hopefully get your
+the fact the laptop has to last the day without external power and will
+hopefully get your
 child through a few years of school, then you want this number to be
-high so as the battery degrades over time then it'll still have the
+high so as the battery life degrades over time then it'll still have
+the
 ability to hold a few hours worth of charge after its been in use for a
 few years.
 </p>
 
-<h4>Filtering the web</h4>
+<h4>Filtering and Privacy on the web</h4>
+
 <p>The only other thing at home that crosses my mind and something I
 wrote a previous post on, is the whole net filtering thing at home. I
 normally just suggest use <a href="https://www.opendns.com/setupguide/?url=familyshield">FamilyShield
@@ -122,109 +143,234 @@ by OpenDNS</a>, a free service that filters most stuff and only
 requires your home router to point at their IP address (I wrote how to
 do that kinda, but the above link is their setup guide). You can setup
 a free account and fully manage the filtering and get logs and stuff
-too I recall. Its better than installing some software as then its only
-that machine thats filtered.<br>
+too I recall. Its better than installing some Filtering software as
+then its only
+that machine thats filtered. I've noticed that its common these days
+for Internet Providers (ISP/IAP) to have "Family Filtering" options.<br>
 Actually there was a good twitter thread the other day, a gent teaching
 his kids gf to use VPN I think it was, sounds like he ended up
 schooling a class worth of kids on VPN use, though as he noted it'd
 potentially earn him the ire of parents of said kids if the parents
 were trying to "monitor things to keep the children safe". Which is
 counterproductive in various ways, mostly the user is the person in the
-best position to keep themselves safe, so user education, trust and
-responsibility would work better than monitoring the data. Plus how
+best position to keep themselves safe. User education, trust and
+responsibility work better than monitoring their data. Plus how
 well is said data going to be reviewed, and who has that time? Makes me
 think its a false sense of protection, and introduces an aspect of
 distruct into the often already challenging parent/child relationship.</p>
-<p>Monitoring the network use might be of interest too, its often handy to see whats using it. 
-  You can get this information from the operating system, but one more friendly user experience example is 
-  <a href="https://www.glasswire.com/">Glasswire</a>, which among other things shows you whats using the network,
-  how much its using it, and provides the option to turn off a given programs network privileges. It does other stuff too, but 
-  its bloatware at time of writing</p>
-  <p>Privacy on the Web you ask, there are things like <a href="https://www.eff.org/privacybadger">Privacy Badger by EFF (Electronic Frontier Foundation)</a>, 
-    and various browsers now have "Do Not track" options, which may or may not be respected by websites. And of course as students will
-    be in Internet Explorer or Edge a lot of the time then this suggestion isn't that useful :-/ I'd have to look for options for those two.
-  </p>
-  <p>To take a brief tangent on how to repair Edge for example, MalwareBytes have a blog post on it 
-    <a href="https://malwaretips.com/blogs/remove-microsoft-edge-popup-ads/">Remove adware, pop-ups and virus from Microsoft Edge (Removal Guide)</a>, 
-    which leads into a comment on having PortableApps. As if your child is running as a normal non-admin user and wants to install something,
-    then finding a portable version of the given app, or an alternative that has a portable option means they won't need to be admin to run whatever it
-    is they're wanting to use. It also means the windows registry and file system won't get fragmented with lots of little things being installed/updated/uninstalled if 
-    they try to only use portable/standalone versions of things. <a href="http://portableapps.com/">PortableApps</a> is one handy repository of such apps, and has a nice
-    menu system to access/update/download apps too, not that you need to menu to download or run the actual apps</p>
-    
-  
+
+<p>Monitoring Applications use of the network might be of interest too,
+its often handy to see whats using it. You can get this information
+from the operating system, but one more friendly user experience
+example is <a href="https://www.glasswire.com/">Glasswire</a>, which
+among other things shows you whats using the network, how much its
+using it, and provides the option to turn off a given programs network
+privileges. It does other stuff too, but it wasn't bloatware at time of
+writing, and there's a paid option for more power tools.<br>
+</p>
+
+<p>Privacy on the Web you ask, there are things like <a href="https://www.eff.org/privacybadger">Privacy Badger by EFF
+(Electronic Frontier Foundation)</a>, and various browsers now have "Do
+Not track" options, which may or may not be respected by websites. And
+of course as students will be in Internet Explorer or Edge a lot of the
+time then this suggestion isn't that useful :-/ you'll have to look for
+options for those two.</p>
+
+<br>
+
+<h3>BYOD, Laptops in Schools studies and reference links.</h3>
+
+<p>I've started getting off topic already, so I'll put in a few
+references for those who haven't already done searches on the pros and
+cons of having laptops in their child school.<br>
+</p>
+<p>The poster child for education, <a href="http://www.scholastic.com/browse/article.jsp?id=3749880">Finland
+is #1! Finland's education success has the rest of the world looking
+north for answers</a>. Short answer, schools don't need tech.
+</p>
+<p>An American angle, <a href="http://time.com/4474496/screens-schools-hoax/">Screens In
+Schools Are a $60 Billion Hoax</a></p>
+
+<p>A British opinion, <a href="http://www.bbc.com/news/business-34174796">Computers 'do not
+improve' pupil results, says OECD</a></p>
+
+<p>I'll end with a more positive American angle, <a href="https://journalistsresource.org/studies/society/education/student-learning-laptops-measuring-effectiveness-laptops-american-classrooms">Student learning with laptops: Measuring the effectiveness of laptops in American classrooms</a>,
+because it references some good studies on "Longhand over Laptop
+Notetaking" and the inherent multitasking nature that a laptop provides
+and its impact.</p>
+
 <h4>Random comments</h4>
-  
+
 <p>A possibly handy reference document
 is this (albeit two year old, maybe there's a newer version somewhere) <a href="http://www.education.govt.nz/assets/Documents/School/Managing-and-supporting-students/DigitalTechnologySafeAndResponsibleUseInSchs.pdf" target="_blank">Digital Technology: Safe and Responsible use in schools</a>,
 I'm including this <a href="http://www.education.govt.nz">education.govt</a>
 link purely as another doc to reference
-should your schools InfoSec policy fall short, or not exist. It
+should your schools InfoSec policy fall short, or not exist. The Gov
+doc
 mentions malware once at least...</p>
 
-  <p>I haven't mentioned antivirus have I. Well its kindof presumed that you'll be running some, ideally the school or national education
-  system will have local copies of all the pertinent antivirus definitions so that things all update quickly and easily. But antivirus
-  is just a preventative measure rather than bulletproof protection, viruses are hard to detect, just look at the human body, it 
-  gets confused about whats dangerous (peanuts anyone) and what isn't, and computers are built by humans, so what chance do they have. 
-  Also antivirus can generally mostly only spot the viruses it knows about (from the definitions it updates so regularly), but there are false positives
-  and the area of spotting things it doesn't know about, or behaviour (heurestics?) thats dodgy is hard, made moreso by legitimate software 
-  doing dodgy stuff itself (Windows 10 anyone). As for which, well if you're running Windows 10 then Windows Defender does as good
-    a job as anything, remember Antivirus apps eat up resources (space, battery, memory) and the applications can also provide their
-    own attack surface to your system (i.e. they can have hackable vulnerabilities).<br>
-  There's MalwareBytes and others for more malware specific scanning/system checks. And when you do think things are awry,
-  use one of the online scanners first (see footnote), don't download/install an app (though the online scanners will need to download definitions 
-  and stuff before they run), use online tools, or download a bootable disc/usb image and boot from that if need be (or ask your pet technophile).</p>
-  
+<h5>AntiVirus</h5>
+
+<p>I haven't really mentioned antivirus have I. Well its kindof
+presumed that you'll be running some, ideally the school or national
+education system will have local copies of all the pertinent antivirus
+definitions so that things all update quickly and easily; but antivirus
+is just a preventative measure rather than bulletproof protection.
+Viruses are hard to detect, just look at the human body, it gets
+confused about whats dangerous (peanuts anyone) and what isn't, and
+computers are built by humans, so what chance do they have. Also
+antivirus can generally, mostly only spot the viruses it knows about
+(from the definitions it updates so regularly), but there are false
+positives and the area of spotting things it doesn't know about, or
+behaviour (heuristics?) thats dodgy is hard, made moreso by legitimate
+software doing dodgy stuff itself (Windows 10 upgrade anyone). As for
+which antivirus,
+well if you're running Windows 10 then Windows Defender does as good a
+job as anything, remember Antivirus apps eat up resources (space,
+battery, memory) and the applications can also provide their own attack
+surface to your system (i.e. they can have hackable vulnerabilities
+too).<br>
+There's MalwareBytes and others for more malware specific
+scanning/system checks. And when you do think things are awry, use one
+of the online scanners first (see footnote), don't download/install an
+app (though the online scanners will need to download definitions and
+stuff before they run), use online tools, or have
+friend/pet-technophile download a bootable
+disc/usb image and boot and repair your ssytem with that if need be.<br>
+</p>
+
+<p>To take a brief tangent on how to repair Edge of adware/virus
+infections for example, MalwareBytes have a blog post on it <a href="https://malwaretips.com/blogs/remove-microsoft-edge-popup-ads/">Remove
+adware, pop-ups and virus from Microsoft Edge (Removal Guide)</a>,
+which leads into a comment on having PortableApps. As if your child is
+running as a normal non-admin user and wants to install something, then
+finding a portable version of the given app, or an alternative that has
+a portable option means they won't need to be admin to run whatever it
+is they're wanting to use. It also means the windows registry and file
+system won't get fragmented with lots of little things being
+installed/updated/uninstalled if they try to only use
+portable/standalone versions of things. <a href="http://portableapps.com/">PortableApps</a> is one handy
+repository of such apps, and has a nice menu system to
+access/update/download apps too, not that you need the menu to download
+or run the actual apps, its just a handy access point/updater for them.<br>
+</p>
+
 <h5>Virtual Private Network (VPN)</h5>
-<p>Figured I should include a bit on VPN after I go and mention a random twitter thread and don't actually say what VPN is. 
-Before I forget, "why VPN?" you ask, in short means when your kids login to a service or send email a third party who's on the same
-network (classroom/school-wide wifi remember) won't be able to see their password or email like reading a postcard in your letterbox.
-How easy is that you ask? Well, this is the internet, anything and everything is available, I recall installing an Android app once
-just to see how easy it made session hijacking (thats where you see who's on an account of interest and you high jack their login, so you're now them).</p>
-<p>There are various ways of doing this, paid or free services, setting up your own. I'd opt for setting up your own on your home router if possible
-or on a spare computer (old desktop/laptop, raspberry pi, unloved IoT device whose firmware is totally insecure so no good for the use it was purchased for...)</p>
+
+<p>Figured I should include a bit on VPN after I go and mention a
+random twitter thread and don't actually say what VPN is. Before I
+forget, "why VPN?" you ask, in short it means when your kids login to a
+service or send email a third party who's on the same
+network (classroom/school-wide wifi remember) won't be so easily able
+to see
+their password or email like reading a postcard in your letterbox.
+How easy is that you ask? Well, this is the internet, anything and
+everything is available, I recall installing an Android app once
+just to see how easy it made session hijacking (thats where you see
+who's on an account of interest and you high jack their login, so
+you're now them) on the local wifi, like say a cafes free wifi... .</p>
+
+<p>There are various ways of doing VPN, paid or free services, setting
+up your own. I'd opt for setting up your own on your home router if
+possible
+or on a spare computer (old desktop/laptop, raspberry pi, unloved IoT
+device whose firmware is totally insecure so no good for the use it was
+purchased for...)</p>
+
 <ul>
-  <li>A useful intro/overview of VPN and uses of it over at makeuseof, <a href="http://www.makeuseof.com/tag/8-instances-you-werent-using-a-vpn-but-shouldve-been/">The VPN Checklist</a></li>
-<li>Setting up a home VPN on your router, <a href="http://www.ibvpn.com/billing/knowledgebase/36/DD-WRT-routers-OpenVPN-setup.html">OpenVPN setup on DD-WRT routers</a></li>
-  <li>If you don't want to do any work and have a Raspberry Pi this might work for you, <a href="http://www.pivpn.io/">PiVPN: Simplest OpenVPN setup and configuration, designed for Raspberry Pi.</a></li>
+
+  <li>A useful intro/overview of VPN and uses of it over at makeuseof, <a href="http://www.makeuseof.com/tag/8-instances-you-werent-using-a-vpn-but-shouldve-been/">The
+VPN Checklist</a></li>
+  <li>Setting up a home VPN on your router, <a href="http://www.ibvpn.com/billing/knowledgebase/36/DD-WRT-routers-OpenVPN-setup.html">OpenVPN
+setup on DD-WRT routers</a></li>
+  <li>If you don't want to do any work and have a Raspberry Pi this
+might work for you, <a href="http://www.pivpn.io/">PiVPN: Simplest
+OpenVPN setup and configuration, designed for Raspberry Pi.</a></li>
 </ul>
-<p>Think I've probably gone too far now with the anxiety inducing aspect of things...oh well, will wait for feedback from my friends.</p>
-  
-  <h5>External Physical Devices</h5>
-  <p>As for protecting your childs device from external devices (<a> href="https://opensource.srlabs.de/projects/badusb">BadUSB</a>),
-  you could get them a "usb condom", as filling the ports with hotglue isn't a good useability feature. There are a few options, internet search is your friend, there's a kiwi chap who's built one
-    such device you can order, <a href="https://github.com/robertfisk/USG">USG is a firewall for your USB ports</a>;
-    I have no idea what USG means and its really bugging me.</p>
-  <h5>Passwords, and Usernames</h5>
-  <p>You can find a lot of info on this, lots of conflicting info. The only advice I'd go with is care of a <a href="https://xkcd.com/936/">cartoon on XKCD</a>,
-   in short, don't use single words, ideally use a random/nonense phrase thats memorable for your child. The longer the better, but lots of systems
-  still have horrible limits (i.e. only eight characters), so have a decent long password, and a decent-ish short one for those programs/sites that are behind the times. 
-  Replacing 'a' with '@' doesn't improve security if you're still using a word, like p@ssword, it'll merely make it harder for your child to remember;
-  i.e. which characters did I "cunningly" switch for "special characters".</p>
-  <p>Should comment on Usernames too I guess. Mainly because we're talking about children. So rule of thumb, ideally don't have any
-  identifying info in your username or email address. Like firstname-country-code, JoeNZ for example, lets anyone know you're a kiwi
-  named Joe. Not a biggie, but knowing someones name provides an instant degree of familiarity. For emails, if you're in the micrsoft/hotmail/outlook.com 
-  ecosystem then have your email that you share, and an alias (or more) on your account (an alias being another email address, whose email
-  will appear in the same inbox, unless you filter it sideways or such), then have the email you share not be one that is permitted to login
-  to your account/computer (if doing Windows 10 with a non local account). Just provides one less bit of info to anyone wanting to access your childs account(s).</p>
-  <p>Two Factor Authentication (2FA), enable it if viable. If your child doesn't have a phone then there are other hardware options, 2FA dongles, do a internet search for them.</p>
-  <h5>Social Engineering - Phishing, Spear phishing, Vishing, Spoofing, Whaling</h5>
-  <p>One thing to remind your child of, is that of messages from friends or teachers that seem odd. Odd in the sense the email address isn't quite right, or the 
-  style of the email is not in keeping with the supposed author, or there are more typos than usual. As the email could be a bit of social engineering attack, or they may
-   have just infected themselves with malware/virus if they've opened the message in a normal email client already and the email had such a payload.</p>
-  <p>As with any email, be wary of odd subject lines, attachments with unlikely, doubled-up or unexpected file extensions; i.e. don't click vbs or exe extensioned attachments.</p>
+
+<p>Think I've probably gone too far now with the anxiety inducing
+aspect of things...oh well, will wait for feedback from my friends.</p>
+
+<h5>External Physical Devices</h5>
+
+<p>As for protecting your childs device from external devices (<a href="https://opensource.srlabs.de/projects/badusb">BadUSB</a>), you
+could get them a "usb condom", as filling the ports with hotglue isn't
+a good useability feature. There are a few options, internet search is
+your friend, there's a kiwi chap who's built one such device you can
+order, <a href="https://github.com/robertfisk/USG">USG is a firewall
+for your USB ports</a>; I have no idea what USG means and its really
+bugging me.</p>
+
+<h5>Passwords, and Usernames</h5>
+
+<p>You can find a lot of info on this, lots of conflicting info. The
+only advice I'd go with is care of a <a href="https://xkcd.com/936/">cartoon
+on XKCD</a>, in short, don't use single words, ideally use a
+random/nonsense phrase thats memorable for your child. The longer the
+better, but lots of systems still have horrible limits (i.e. only eight
+characters), so have a decent long password, and a decent-ish short one
+for those programs/sites that are behind the times. Replacing 'a' with
+'@' doesn't improve security if you're still using a word, like
+p@ssword, it'll merely make it harder for your child to remember; i.e.
+which characters did I "cunningly" switch for "special characters", as
+password and p@ssword will both be in the brute force dictionary.<br>
+</p>
+
+<p>Should comment on Usernames too I guess. Mainly because we're
+talking about children. So rule of thumb, ideally don't have any
+identifying info in your username or email address. Like
+firstname-country-code, JoeNZ for example, lets anyone know you're a
+kiwi named Joe. Not a biggie, but knowing someones name provides an
+instant degree of familiarity. For emails, if you're in the
+micrsoft/hotmail/outlook.com ecosystem then have your email that you
+share, and an alias (or more) on your account (an alias being another
+email address, whose email will appear in the same inbox, unless you
+filter it sideways or such), then have the email you share not be one
+that is permitted to login to your account/computer (if doing Windows
+10 with a non local account). Just provides one less bit of info to
+anyone wanting to access your childs account(s).</p>
+
+<p>Two Factor Authentication (2FA), enable it if viable. If your child
+doesn't have a phone then there are other hardware options, 2FA
+dongles, do a internet search for them.</p>
+
+<h5>Social Engineering - Phishing, Spear phishing, Vishing, Spoofing,
+Whaling</h5>
+
+<p>One thing to remind your child of, is that of messages from friends
+or teachers that seem odd. Odd in the sense the email address isn't
+quite right, or the style of the email is not in keeping with the
+supposed author, or there are more typos than usual. As the email could
+be a bit of social engineering attack, or they may have just infected
+themselves with malware/virus if they've opened the message in a normal
+email client already and the email had such a payload.</p>
+
+<p>As with any email, be wary of odd subject lines, attachments with
+unlikely, doubled-up or unexpected file extensions; i.e. don't click
+vbs or exe extensioned attachments.</p>
+
 <br>
 
 <hr>
-<p>Online Virus Scanners, there are others, some of which provide no "fix" option unless you pay for their product</p>
-  <ul>
-    <li><a href="https://www.trendmicro.com/en_us/forHome/products/housecall.html">HouseCall - Free Online Virus Scan</a></li>
-    <li><a href="https://www.eset.com/us/home/online-scanner/">Free Virus Scan | Online Virus Scan from ESET</a></li>
-    <li><a href="https://www.bitdefender.com/scanner/online/free.html">Bitdefender Quick Scan Free Online Virus Scan</a> is the fast/lightweight option</li>
-  </ul> 
-  
-<p>All typos and grammatical errors are because this is written in something with notepad grade spell checking ability :-)<br>
+<p>Online Virus Scanners, there are others, some of which provide no
+"fix" option unless you pay for their product</p>
+
+<ul>
+
+  <li><a href="https://www.trendmicro.com/en_us/forHome/products/housecall.html">HouseCall
+- Free Online Virus Scan</a></li>
+  <li><a href="https://www.eset.com/us/home/online-scanner/">Free Virus
+Scan | Online Virus Scan from ESET</a></li>
+  <li><a href="https://www.bitdefender.com/scanner/online/free.html">Bitdefender
+Quick Scan Free Online Virus Scan</a> is the fast/lightweight option</li>
+</ul>
+
+<p>All typos and grammatical errors are because this is written in
+something with notepad grade spell checking ability :-)<br>
 </p>
+
 <p>© @redtahr 2017</p>
-  <h6>2017 March 06</h6>
+
+<h6>2017 March 06</h6>
+
 </body></html>
