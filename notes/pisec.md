@@ -83,7 +83,7 @@ this gets all four cores on the pi running (and may thrash your sd card, so chan
 
 # build time
 make -j4
-...sometime later...on a pi 3 ~90 minutes, on a pi 2b ~100 minutes.
+...sometime later...on a pi 3 ~90 minutes, on a pi 2b ~150 minutes.
 
 # install time
 sudo make install
