@@ -80,6 +80,8 @@ key points, the Python 2 or 3 (depending on your choices earlier) sections, Inte
 /etc/dphys-swapfile  and then edit the CONF_SWAPSIZE=100 variable:
 CONF_SWAPSIZE=1024
 this gets all four cores on the pi running (and may thrash your sd card, so change it back when you're done)
+$ sudo /etc/init.d/dphys-swapfile stop
+$ sudo /etc/init.d/dphys-swapfile start
 
 # build time
 make -j4
