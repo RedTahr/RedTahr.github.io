@@ -85,7 +85,7 @@ $ sudo /etc/init.d/dphys-swapfile start
 
 # build time
 make -j4
-...sometime later...on a pi 3 ~90 minutes, on a pi 2b ~140 minutes.
+...sometime later...on a pi 3 ~90 minutes, on a pi 2b ~140 minutes, on a pi zero 8 hours
 
 # install time
 sudo make install
