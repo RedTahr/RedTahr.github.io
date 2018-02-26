@@ -1,4 +1,4 @@
-# notes on building metasploitable 3 on macos
+# my notes for me on building metasploitable 3, initially on macos
 (just a summary of the steps for my quick reference)
 
 install packer - download/install packer and add to path, https://www.packer.io/intro/getting-started/install.html,
