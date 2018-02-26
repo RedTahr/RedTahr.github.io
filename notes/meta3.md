@@ -15,5 +15,6 @@ https://github.com/rapid7/metasploitable3
 clone repo
 
 edit autounattend.xml if adding license keys: https://github.com/rapid7/metasploitable3/wiki
+(ended up commenting out the valid key as kept getting told it wasn't valid, so will try it after installation has completed)
 
 edit autounattend.xml if have downloaded iso already: https://github.com/joefitzgerald/packer-windows
