@@ -31,9 +31,11 @@ Vaguely less easy, install virtual box and download a pre-setup appliance
 from kali or such, which will give you all the things and more.
 I've got used to using hyper-v due to my day job, so tend to install stuff
 from iso's which is another option.
-A more performant option (with less gui) is probably docker, so install
-docker and pull kali or such, its a minimum install, but the commands to 
-install the top-10 or full or all are easy enough to run.
+A more performant option (with less gui) is probably docker, 
+so install docker <https://www.docker.com/community-edition> 
+and pull kali <https://www.kali.org/news/official-kali-linux-docker-images/> 
+or such, its a minimum install, 
+so update with metapackages <https://www.kali.org/news/kali-linux-metapackages/>
 
 I should probably be including commands in here...
 
