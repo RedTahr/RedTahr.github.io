@@ -1,11 +1,11 @@
 # journey to enlightenment
 ### two gents quest to get some knowledge about this infosec thing
 
-So disregarding that I'm in the habit of using github for storing my notes,
-or that I'm writing this in a markdown file (when I know very little markdown),
-this will be my notes on pottering about trying to learn some things.
-There are many more useful resources for those looking to learn, these are 
-just my notes so I don't forget things so quickly.
+This will be my notes on pottering about trying to learn some things.
+There are many more useful resources for those on a similar journey <https://github.com/topics/infosec>,
+these are just my notes so I don't forget things so quickly.
+Disregard that I'm in the habit of using github for storing my notes,
+or that I'm writing this in a markdown file (when I know very little markdown).
 
 ## foreword?
 
