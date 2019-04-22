@@ -4,6 +4,8 @@ For children, education is still the best bet, as if they go rogue/out or switch
 
 So this is mostly for my amusement and to prompt me to write more, and do some of these ideas I have for my home network.
 
+If you've ended up here wanting actual information, then I'll direct you to [https://decentsecurity.com/] for helpful guidance.
+
 ## phase 1, simple things
 
 Choose a DNS service to filter things, I use OpenDNS [https://www.opendns.com/home-internet-security/], my IAP has a filtering service I could pay for, and there are other services about too. If you're with a big telco they might not let you easily change your DNS settings in your router, so complain, buy another router, or look up how to telnet into your router...what could go wrong...
