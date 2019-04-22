@@ -1,6 +1,10 @@
 
 # 2019
 
+## improving ones home network; for the children... or laughs
+my slowly developing journey of overengineering my home network; a work in progress
+[https://redtahr.github.io/posts/improving-home-network.md]
+
 ### why are you posting in markdown files?
 because this is me talking or screaming into the void, and I don't need html.
 though I've noticed some browsers don't natively open markdown, so maybe I'll revert to txt files in due course.
@@ -35,4 +39,4 @@ an early draft with links that was published in the NZ Science Teacher Magazine
 
 
 
-## change log: [https://github.com/RedTahr/RedTahr.github.io/commits/master]
+### change log: [https://github.com/RedTahr/RedTahr.github.io/commits/master]
