@@ -25,7 +25,7 @@ In Splunk > Settings > Data > Data Inputs and choosing things you'd like. Micros
 
 Then for pi-hole logs to splunk you'll probably need the splunk forward for ARM, there's a "pi-hole visualizer" [https://splunkbase.splunk.com/app/3023/#/details] or the "pi-hole app for splunk" [https://splunkbase.splunk.com/app/4116/], I haven't set these up yet.
 
-Then your router...the router admin interface might have a "management > system log" type option, where you can configure the IP:port you want the logs to be sent to.
+Then your router...the router admin interface might have a "management > system log" type option, where you can configure the IP:port you want the logs to be sent to, then in Splunk, again go Settings > Data > Data Inputs and choose the appropriate input type, probably UDP, and configure it appropriately based on how you configured your router.
 
 ##### created 2019-04-23
 ##### change log [https://github.com/RedTahr/RedTahr.github.io/commits/master]
