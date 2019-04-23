@@ -20,6 +20,9 @@ The main issoe I've hit with pi-hole is that tracked links won't work, I've had 
 
 Been working my way through some splunk training, and have previously installed sysmon [https://github.com/SwiftOnSecurity/sysmon-config] config by Swift On Security, so now I want to get my router and the pi sending logs to splunk too, thats the next step...
 
+To start with getting some localmachine windows logs into splunk is straight forward:
+In Splunk > Settings > Data > Data Inputs and choosing things you'd like. Microsoft-Windows-Sysmon/Operational is the log (under available logs) that you'll want if you're after sysmon logs.
+
 ##### created 2019-04-23
 ##### change log [https://github.com/RedTahr/RedTahr.github.io/commits/master]
 ##### © Red Tahr
