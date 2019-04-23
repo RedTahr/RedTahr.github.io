@@ -18,10 +18,14 @@ The main issoe I've hit with pi-hole is that tracked links won't work, I've had 
 
 ## phase 3, log all the things
 
-Been working my way through some splunk training, and have previously installed sysmon [https://github.com/SwiftOnSecurity/sysmon-config] config by Swift On Security, so now I want to get my router and the pi sending logs to splunk too, thats the next step...
+Been working my way through some splunk training, and have previously installed sysmon [https://github.com/SwiftOnSecurity/sysmon-config] config by Swift On Security, so now I want to get my router and the pi sending logs to splunk too.
 
 To start with getting some localmachine windows logs into splunk is straight forward:
 In Splunk > Settings > Data > Data Inputs and choosing things you'd like. Microsoft-Windows-Sysmon/Operational is the log (under available logs) that you'll want if you're after sysmon logs.
+
+Then for pi-hole logs to splunk you'll probably need the splunk forward for ARM, there's a "pi-hole visualizer" [https://splunkbase.splunk.com/app/3023/#/details] or the "pi-hole app for splunk" [https://splunkbase.splunk.com/app/4116/], I haven't set these up yet.
+
+Then your router...the router admin interface might have a "management > system log" type option, where you can configure the IP:port you want the logs to be sent to.
 
 ##### created 2019-04-23
 ##### change log [https://github.com/RedTahr/RedTahr.github.io/commits/master]
