@@ -1,11 +1,6 @@
 
 # 2019
 
-## smart jewellery, gone bust
-my journey through trying to write an app to interact with some smart jewellery from a no longer existing company.
-[https://redtahr.github.io/posts/smart-jewellery.md]
-
-
 ## improving ones home network; for the children... or laughs
 my slowly developing journey of overengineering my home network; a work in progress
 [https://redtahr.github.io/posts/improving-home-network.md]
