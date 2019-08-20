@@ -8,11 +8,12 @@ If you've ended up here wanting actual information, then I'll direct you to [htt
 
 ## phase 1, simple things
 
-Choose a DNS service to filter things, I use OpenDNS [https://www.opendns.com/home-internet-security/], my IAP has a filtering service I could pay for, and there are other services about too. If you're with a big telco they might not let you easily change your DNS settings in your router, so complain, buy another router, or look up how to telnet into your router...what could go wrong...
+Choose a DNS service to filter things, I use cleanbrowsing [https://cleanbrowsing.org/filters] as it performed better than opendns [https://hackernoon.com/dns-performance-comparison-google-quad9-opendns-norton-cleanbrowsing-and-yandex-d62d24e38f98] but mostly because it forces safe search on most search engines. My IAP has a filtering service I could pay for, and there are other services about too. If you're with a big telco they might not let you easily change your DNS settings in your router, so complain, buy another router, or look up how to telnet into your router...what could go wrong...
 
 ## phase 2, not so simple
 
-To block malware/adware in more things I setup pi-hole [https://pi-hole.net/], I followed Scott Helmes guide [https://scotthelme.co.uk/tag/pi-hole/] though I haven't done the DNS-over-HTTPS / Lets Encrypt thing yet, and had a vague go at setting the pi up as DHCP, but got something wrong, so just have it as the first DNS entry on my home router instead, plus i'm paranoid an apt-get upgrade will bork something on the pi, or have the pi burn out while i'm away and have to remotely talk my wife through getting the internet back working.
+To block more malware/adware in more things I setup pi-hole [https://pi-hole.net/], I followed Scott Helmes guide [https://scotthelme.co.uk/tag/pi-hole/] though I haven't done the DNS-over-HTTPS / Lets Encrypt thing yet, and had a vague go at setting the pi up as DHCP, but got something wrong, so just have it as the first DNS entry on my home router instead, plus i'm paranoid an apt-get upgrade will bork something on the pi, or have the pi burn out while i'm away and have to remotely talk my wife through getting the internet back working.
+I've since written my own notes with a few additions, [https://gist.github.com/RedTahr/925a322baefb4e5b28318838b4a61b45], highlights I guess are the addition of ufw (uncomplicated firewall), fail2ban, log2ram and the dark theme.
 
 The main issoe I've hit with pi-hole is that tracked links won't work, I've had to white list a few domains to let work surveys resolve via the tracked url; such as http(s)://po.st I think was one. But otherwise pi-hole is a very tidy solution, and makes mobile apps faster as ads just silently don't load, I support the sites/apps directly where I can.
 
@@ -28,5 +29,6 @@ Then for pi-hole logs to splunk you'll probably need the splunk forward for ARM,
 Then your router...the router admin interface might have a "management > system log" type option, where you can configure the IP:port you want the logs to be sent to, then in Splunk, again go Settings > Data > Data Inputs and choose the appropriate input type, probably UDP, and configure it appropriately based on how you configured your router.
 
 ##### created 2019-04-23
+##### updated 2019-08-20
 ##### change log [https://github.com/RedTahr/RedTahr.github.io/commits/master]
 ##### © Red Tahr
