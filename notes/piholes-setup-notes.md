@@ -2,13 +2,21 @@ tl;dr version
 
 get pi.
 > sudo apt update
+
 > sudo apt upgrade
+
 > raspi-config [change password, config things as desired]
+
 # install pihole
+
 > sudo su [if you worry about pihole saying you're not superuser when running the next command]
+
 > curl -sSL https://install.pi-hole.net | sudo bash
+
 re static ip, choose what it suggests, or pick a higher number if the pi's not going to be on all the time, to avoid ip conflicts.
+
 # point your router at the pihole
+
 bathe in gloriously less visually noisy internets.
 
 #### 20190827 by Red Tahr.
