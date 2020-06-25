@@ -35,8 +35,15 @@ nano /etc/fstab
 ## map other drives as needed
 ## put iso files in images folder of chosen drive
 
+## add another drive to VM
+ls /dev/disk/by-id/
+root@pve:~# ls /dev/disk/by-id/
+qm set VM-ID -virtio2 /dev/disk/by-id/DISK-ID
+
 ## references:
 - https://serenity-networks.com/how-to-update-proxmox-ve-when-you-do-not-have-a-valid-subscription/
 - https://johnscs.com/remove-proxmox51-subscription-notice/
 - https://askubuntu.com/questions/113733/how-do-i-correctly-mount-a-ntfs-partition-in-etc-fstab
 - https://dannyda.com/2020/05/10/how-to-delete-remove-local-lvm-from-proxmox-ve-pve-and-some-lvm-basics-commands/
+- https://johnkeen.tech/proxmox-physical-disk-to-vm-only-2-commands/
+-- https://docs.fedoraproject.org/en-US/quick-docs/creating-windows-virtual-machines-using-virtio-drivers/index.html
