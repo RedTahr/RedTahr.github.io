@@ -33,6 +33,8 @@ nano /etc/fstab
 /dev/pve/data /mnt/data ext4 defaults 0 0
 
 ## map other drives as needed
+lsblk -f is one way to see UUIDs
+UUID=.... /mnt/... etcetcetc
 ## put iso files in images folder of chosen drive
 
 ## add another drive to VM
