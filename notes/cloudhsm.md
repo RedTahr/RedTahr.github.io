@@ -7,8 +7,9 @@
 - also follow the KSP/CNG steps under using the software libraries, currently at <https://docs.aws.amazon.com/cloudhsm/latest/userguide/ksp-library.html>, initially you'll want to run set_cloudhsm_credentials, so the windows EC2 instance can talk to the CSP/CloudHSM.
 - associate your installed cert with the private key thats in the HSM, steps currently listed <https://docs.aws.amazon.com/cloudhsm/latest/userguide/ksp-library-associate-key-certificate.html>
   - import cert, i.e. certreq -accept certificatename
-  - Associate the AWS CloudHSM private key with the certificate, i.e. import_key.exe –RSA CertReq-xxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxx
-  - update the certificate store, i.e. certutil -f -csp "Cavium Key Storage Provider"-repairstore my "xxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxx"
+  - certutil -store my to check/find cert id and simple/key container name
+  - Associate the AWS CloudHSM private key with the certificate, i.e. import_key.exe –RSA "key/simple container name"
+  - update the certificate store, i.e. certutil -f -csp "Cavium Key Storage Provider"-repairstore my "cert serial"my "Personal"
 - sign things
  
 ## appendix
