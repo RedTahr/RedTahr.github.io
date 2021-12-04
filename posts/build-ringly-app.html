@@ -22,7 +22,7 @@ p {
   <H3 style="font-family:Arial">The less easy one, iOS.</H3>
   <p>During my attempts at this there's been the occasional social media post about it. And I've had a few replies and DMs enquiring if I had had success.
   I'm not a native iOS dev, so attempts at this have been, at best, annual.</p>
-  <p>One kind soul even shared their backed up IPA. So I edited the info.plist for it to associate it with our account, but failed to work out how
+  <p>One kind soul even shared their backed up IPA. So I edited the info.plist for it, to associate it with our account, but failed to work out how
   to get it to run on a device under our apple account.</p>
   <p>Recently someone again asked if I'd had success. Which sparked off this most recent attempt.</p>
   <p>At this point my highlights for getting close to this building include:</p>
@@ -30,6 +30,7 @@ p {
     <li>use XCode 8.x</li>
     <li>you may find yourself manually downloading the built framework files from github if Carthage is unhappy</li>
     <li>generally use software from before 2019 when Ringly posted their code</li>
+	  <li>ditch crashalytics, firmware updating (DFU), Fabric, Airship, login logic, push notification requirement, for starters</li>
   </ul>
   <p>The journey continues....</p>
   <hr>
