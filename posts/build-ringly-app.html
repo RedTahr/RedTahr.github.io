@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Building Ringly</title>
+<script>
+p {
+    font-family: "Arial";
+}
+</script>
+</head>
+<body>
+	<H2 style="font-family:Arial">Building the Ringly mobile apps</H2>
+    <p>I bought my wife a Ringly ring a year or two before the company closed its doors. 
+      So it was a bit disappointing when she came to install the Ringly app on a replacement phone, and the app was no longer available.</p>
+  <p>I had a look to see if Ringly had posted any code online and came up empty handed.</p>
+  <p>A while past and someone replied to a social media post of mine about trying to hunt down the app. I mentioned having seen some of the devs listed on a 
+    work related social media site. Within a month Ringly had posted Android and iOS code repositories for their apps; I'm pretty sure they hadn't
+  been there before. So thank you to that lady for sparking off that action.</p>
+  <H3 style="font-family:Arial">The easy one was Android</H3>
+  <p>I've done some light native Android work. The first hurdle was deciding which version of Android Studio to work with.
+  After that, I removed the Firmware (DFU) updating logic, and the login page, and the app was happy to track my steps and blink at me for notifications.</p>
+  <H3 style="font-family:Arial">The less easy one, iOS.</H3>
+  <p>During my attempts at this there's been the occasional social media post about it. And I've had a few replies and DMs enquiring if I had had success.
+  I'm not a native iOS dev, so attempts at this have been, at best, annual.</p>
+  <p>One kind soul even shared their backed up IPA. So I edited the info.plist for it to associate it with our account, but failed to work out how
+  to get it to run on a device under our apple account.</p>
+  <p>Recently someone again asked if I'd had success. Which sparked off this most recent attempt.</p>
+  <p>At this point my highlights for getting close to this building include:</p>
+  <ul>
+    <li>use XCode 8.x</li>
+    <li>you may find yourself manually downloading the built framework files from github if Carthage is unhappy</li>
+    <li>generally use software from before 2019 when Ringly posted their code</li>
+  </ul>
+  <p>The journey continues....</p>
+  <hr>
+	<p>© @redtahr 2021</p>
+</body>
+</html>
